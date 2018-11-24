@@ -1,15 +1,16 @@
 package steps;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.E;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
+import pom.LoginPage;
 
-public class Trellosteps {
+public class TrelloStep {
     @Dado("^que esteja logado no trello$")
     public void queEstejaLogadoNoTrello() {
        // System.out.println("que esteja logado no trello");
+
     }
 
     @E("^acesse o board$")
@@ -35,10 +36,11 @@ public class Trellosteps {
     @Quando("^excluo o card$")
     public void excluoOCard() {
         System.out.println("excluo o card");
-        
+
     }
 
-    @Entao("^o card não existe mais$")
+    @Entao("^o card nao existe mais$")
     public void oCardNaoExisteMais() {
+        System.out.println("Card nao existe");
     }
 }

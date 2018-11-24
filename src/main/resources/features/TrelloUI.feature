@@ -1,8 +1,7 @@
 #language: pt
 #encoding: UTF-8
 @ui
-
-  Funcionalidade: Trello UI
+Funcionalidade: Trello UI
     @ui
     Esquema do Cenario: Criando, comentando e deletando um card
       Dado que esteja logado no trello
@@ -13,6 +12,6 @@
       Quando excluo o card
       Entao o card nao existe mais
       Exemplos:
-        |card Name|          Comment              |
+        |card Name        |  Comment              |
         |Alex Card        |  Comentario Alex      |
         |Claudio Card     |  Comentario Claudio   |
