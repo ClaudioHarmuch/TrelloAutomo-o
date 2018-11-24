@@ -15,8 +15,11 @@ public class LoginPage {
     private WebElement passowrdInput;
     @FindBy(how = How.ID, using = "login")
     private WebElement loginButton;
+    @FindBy(how = How.XPATH, using =  "//*[@id=\"header\"]/a")
+    private WebElement initialPage;
 
-    //
+
+
     public LoginPage(){
         PageFactory.initElements(Hook.getDriver(),this);
 
@@ -27,6 +30,18 @@ public class LoginPage {
         return this;
     }
 
+    public LoginPage doLogin(String user, String password){
+        userInput.sendKeys(user);
+        passowrdInput.sendKeys(password);
+        loginButton.click();
+        return  this;
+
+    }
+
+    public String checkInitialPage(){
+        return  initialPage.getAttribute("aria-label");
+
+    }
 
 }
 
