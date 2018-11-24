@@ -1,8 +1,9 @@
-package Util;
+package util;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
+
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
@@ -11,4 +12,5 @@ import org.junit.runner.RunWith;
 )
 
 public class RunnerTest {
+
 }

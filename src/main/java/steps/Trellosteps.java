@@ -9,7 +9,7 @@ import cucumber.api.java.pt.Quando;
 public class Trellosteps {
     @Dado("^que esteja logado no trello$")
     public void queEstejaLogadoNoTrello() {
-        System.out.println("que esteja logado no trello");
+       // System.out.println("que esteja logado no trello");
     }
 
     @E("^acesse o board$")
@@ -18,12 +18,12 @@ public class Trellosteps {
     }
 
     @Quando("^crio um card com nome \"([^\"]*)\"$")
-    public void crioUmCardComNome(String arg0) throws Throwable {
+    public void crioUmCardComNome(String arg0) {
         System.out.println("crio um card com nome");
     }
 
     @E("^comento \"([^\"]*)\"$")
-    public void comento(String arg0) throws Throwable {
+    public void comento(String arg0) {
         System.out.println("comento");
     }
 
@@ -39,6 +39,6 @@ public class Trellosteps {
     }
 
     @Entao("^o card não existe mais$")
-    public void oCardNãoExisteMais() {
+    public void oCardNaoExisteMais() {
     }
 }
